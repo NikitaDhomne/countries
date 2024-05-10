@@ -1,16 +1,13 @@
-# countries
+# Country Info
 
-A new Flutter project.
+This country info app get country info by their continent also user can be able to search country by their name.
 
-## Getting Started
+## Screenshot
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+![Countries App](https://github.com/NikitaDhomne/countries/assets/102669357/07bd56d0-e120-4a43-a059-8711e2c820b9)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
