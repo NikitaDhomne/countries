@@ -52,48 +52,30 @@ class CountryProvider with ChangeNotifier {
         );
 
         //add countryInfo in list according to their region
-        if (country.continents!.first.toLowerCase() == "europe") {
-          europeCountryInfo.add(countryInfo);
-        }
-        if (country.continents!.first.toLowerCase() == "north america") {
-          europeCountryInfo.add(countryInfo);
-        }
-        if (country.continents!.first.toLowerCase() == "south america") {
-          europeCountryInfo.add(countryInfo);
-        }
-        if (country.continents!.first.toLowerCase() == "africa") {
-          europeCountryInfo.add(countryInfo);
-        }
-        if (country.continents!.first.toLowerCase() == "oceania") {
-          europeCountryInfo.add(countryInfo);
-        }
-        if (country.continents!.first.toLowerCase() == "asia") {
-          europeCountryInfo.add(countryInfo);
-        }
 
-        // switch (country.region?.toLowerCase()) {
-        //   case "europe":
-        //     europeCountryInfo.add(countryInfo);
-        //     break;
-        //   case "americas":
-        //     if (country.subregion?.toLowerCase() == "north america") {
-        //       northAmericaCountryInfo.add(countryInfo);
-        //     } else if (country.subregion?.toLowerCase() == "south america") {
-        //       southAmericaCountryInfo.add(countryInfo);
-        //     }
-        //     break;
-        //   case "africa":
-        //     africaCountryInfo.add(countryInfo);
-        //     break;
-        //   case "oceania":
-        //     oceaniaCountryInfo.add(countryInfo);
-        //     break;
-        //   case "asia":
-        //     asiaCountryInfo.add(countryInfo);
-        //     break;
-        //   default:
-        //     break;
-        // }
+        switch (country.region?.toLowerCase()) {
+          case "europe":
+            europeCountryInfo.add(countryInfo);
+            break;
+          case "americas":
+            if (country.subregion?.toLowerCase() == "north america") {
+              northAmericaCountryInfo.add(countryInfo);
+            } else if (country.subregion?.toLowerCase() == "south america") {
+              southAmericaCountryInfo.add(countryInfo);
+            }
+            break;
+          case "africa":
+            africaCountryInfo.add(countryInfo);
+            break;
+          case "oceania":
+            oceaniaCountryInfo.add(countryInfo);
+            break;
+          case "asia":
+            asiaCountryInfo.add(countryInfo);
+            break;
+          default:
+            break;
+        }
       }
 
       notifyListeners();
