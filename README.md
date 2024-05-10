@@ -1,6 +1,6 @@
-# countries
+# Country Info
 
-A new Flutter project.
+This country info app get country info by their continent 
 
 ## Getting Started
 
