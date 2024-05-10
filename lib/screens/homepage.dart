@@ -90,9 +90,11 @@ class _MyHomePageState extends State<MyHomePage> {
   // Widget to build the ExpansionTile for America i.e. inherited ExpansionTile
   Widget _buildAmericaExpansionTile(CountryProvider countryProvider) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10), // border radius
-        color: Colors.white, // Add background color
+        color: Colors.black12, // Add background color
+        border: Border.all(color: Color.fromARGB(95, 147, 147, 147)),
       ),
       child: ExpansionTile(
         title: Text(
@@ -113,6 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 _buildExpansionTile(
                     "North America", countryProvider.northAmericaCountryInfo),
           ),
+          _buildSizedBox(),
           Padding(
             padding: EdgeInsets.only(left: 10),
             child:
@@ -128,9 +131,11 @@ class _MyHomePageState extends State<MyHomePage> {
   // Widget to build the ExpansionTile
   Widget _buildExpansionTile(String title, List<CountryInfo> countryList) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10), // Adjust the radius as needed
-        color: Colors.white, // Add background color if needed
+        borderRadius: BorderRadius.circular(10), // border radius
+        color: Colors.black12, // Add background color
+        border: Border.all(color: Color.fromARGB(95, 147, 147, 147)),
       ),
       child: ExpansionTile(
         title: Text(
